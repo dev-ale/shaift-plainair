@@ -1,5 +1,5 @@
 site:
-  name: shAIft plAInAir
+  name: shiftSpace
   site: 'https://astrowind.vercel.app'
   base: '/'
   trailingSlash: false
@@ -9,8 +9,8 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: shAIft plAInAir
-    template: '%s — shAIft plAInAir'
+    default: shiftSpace
+    template: '%s — shiftSpace'
   description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
   robots:
     index: true
