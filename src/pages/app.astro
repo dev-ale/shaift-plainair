@@ -3,14 +3,24 @@ import Features2 from "../components/widgets/Features2.astro";
 import Layout from "../layouts/PageLayout.astro";
 import ContactUs from "../components/widgets/Contact.astro";
 import HeroText from "../components/widgets/HeroText.astro";
+import Header from "../components/widgets/Header.astro";
 
 const metadata = {
-  title: 'AstroWind — Free template for creating websites with Astro + Tailwind CSS',
-  ignoreTitleTemplate: true,
+  title: 'App',
 };
 ---
 <Layout metadata={metadata}>
-  <!-- HeroText Widget ******************* -->
+  <Fragment slot="header">
+    <Header
+      position="right"
+      actions={[
+        { text: 'Sign in', href: '#' },
+        { text: 'Sign up', href: '#', variant: 'primary' },
+      ]}
+      isSticky
+      showToggleTheme
+    />
+  </Fragment>
 
   <HeroText tagline="App" title="Let's Connect!" />
 
